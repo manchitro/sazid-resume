@@ -20,6 +20,7 @@
 \usepackage{tabularx}
 \usepackage{fontawesome5}
 \usepackage{multicol}
+\usepackage{ragged2e}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
@@ -136,8 +137,9 @@
 
 %-----------INTRO-----------
 \section{Introduction}
-% TODO write professional intro 
-Lorem ipsum
+\justifying
+I am a dedicated software engineer with nearly 2 years of professional experience, holding a bachelor's degree in software engineering. My passion lies in the realm of artificial intelligence and neural networks, and I have actively engaged in research, particularly in the field of disease recognition using deep learning techniques. As a fast learner and avid problem solver, I aspire to further my academic journey by pursuing a master's or Ph.D. degree in computer science with a specific focus on artificial intelligence. My goal is to work on intelligent systems that can tackle real-world challenges, and I am eager to contribute to cutting-edge research under the mentorship of experienced experts in the field.
+
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -151,114 +153,148 @@ Lorem ipsum
 \resumeItemListEnd
 \resumeSubheading
 {American International University-Bangladesh}{Jan. 2018 -- Oct. 2021}
-{Bachelor of Science in Software Engineer}{Dhaka, Bangladesh}
+{Bachelor of Science in Software Engineering}{Dhaka, Bangladesh}
 \resumeItemListStart
 \resumeItem{CGPA 3.84 out of 4.00}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
+\vspace{-18pt}
 
 %------RELEVANT COURSEWORK-------
 \section{Relevant Coursework}
 %\resumeSubHeadingListStart
-\begin{multicols}{4}
+\begin{multicols}{2}
 	\begin{itemize}[itemsep=-5pt, parsep=3pt]
-		\item\small Data Structures
-		\item Software Methodology
-		\item Algorithms Analysis
-		\item Database Management
-		\item Artificial Intelligence
-		\item Internet Technology
-		\item Systems Programming
-		\item Computer Architecture
+		\item\small Machine Learning \& Neural Networks
+		\item Natural Language Processing
+		\item Computer Vision \& Pattern Recognition
+		\item Human Computer Interaction
+		\item Design and Analysis of Algorithms
+		\item Data Structures
+		\item Compiler Design
+		\item Linear Algebra \& Fourier Analysis
+		\item Discrete Mathematics
 	\end{itemize}
 \end{multicols}
 \vspace*{2.0\multicolsep}
 %\resumeSubHeadingListEnd
 
-
+\vspace{5pt}
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Electronics Company}{May 2020 -- August 2020}
-{Software Engineer Intern}{City, State}
+{Orion Informatics Ltd}{Jan 2022 -- Present}
+{Junior Software Engineer}{Dhaka, Bangladesh}
 \resumeItemListStart
-\resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
-\resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
-\resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
-\resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+\resumeItem{Managing large scale web applications for Equiniti (formerly AST Financial)}
+\resumeItem{Maintaining and extending front-end and back-end services using SpringBoot, Angular and MS SQL Server}
+\resumeItem{Built high-performance data pipelines using Apache Kafka and Kafka Streams}
 \resumeItemListEnd
 
 \resumeSubheading
-{Startup, Inc}{May 2019 -- August 2019}
-{Front End Developer Intern}{City, State}
+{Orion Informatics Ltd}{Jul 2021 -- Dec 2021}
+{Software Engineering Intern}{Dhaka, Bangladesh}
+
+\resumeSubheading
+{American International University-Bangladesh}{Oct 2020 -- Dec 2020}
+{Teaching Assistant}{Dhaka, Bangladesh}
 \resumeItemListStart
-\resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
-\resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
-\resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
-\resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+\resumeItem{Advised students on various topics of Compiler Design}
+\resumeItem{Help conduct and prepare materials for lectures}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-\vspace{-16pt}
+\vspace{-10pt}
+
 
 %-----------PROJECTS-----------
-\section{Projects}
-\vspace{-5pt}
+\section{Research Projects}
+% \vspace{-5pt}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{Gym Reservation Bot} $|$ \emph{Python, Selenium, Google Cloud Console}}{January 2021}
+{\textbf{Mammogram ROI Classificatio Using Reinforcement Learning} $|$ \emph{PyTorch}}{Spring 2023}
 \resumeItemListStart
-\resumeItem{Developed an automatic bot using Python and Google Cloud Console to register myself for a timeslot at my school gym.}
-\resumeItem{Implemented Selenium to create an instance of Chrome in order to interact with the correct elements of the web page.}
-\resumeItem{Created a Linux virtual machine to run on Google Cloud so that the program is able to run everyday from the cloud.}
-\resumeItem{Used Cron to schedule the program to execute automatically at 11 AM every morning so a reservation is made for me.}
+\resumeItem{A multi-agent reinforcement learning model where multiple agents observe parts of image and communicate with each other and give consensus for breast cancer classification using regions of interest in mammogram images.}
 \resumeItemListEnd
-\vspace{-13pt}
+% \vspace{-13pt}
 \resumeProjectHeading
-{\textbf{Ticket Price Calculator App} $|$ \emph{Java, Android Studio}}{November 2020}
+{\textbf{Deep Learning Model for Multi-Organ Cancer Classification} $|$ \emph{Keras, TensorFlow}}{Summer  2023}
 \resumeItemListStart
-\resumeItem{Created an Android application using Java and Android Studio to calculate ticket prices for trips to museums in NYC.}
-\resumeItem{Processed user inputted information in the back-end of the app to return a subtotal price based on the tickets selected.}
-\resumeItem{Utilized the layout editor to create a UI for the application in order to allow different scenes to interact with each other.}
+\resumeItem{Developed a hybrid model capable of classifying cervical cancer and acute
+	lymphoma from images. Feature extraction using MobileNet and DenseNet;
+	feature classification using SVM.}
 \resumeItemListEnd
-\vspace{-13pt}
+% \vspace{-13pt}
 \resumeProjectHeading
-{\textbf{Transaction Management GUI} $|$ \emph{Java, Eclipse, JavaFX}}{October 2020}
+{\textbf{Generating Synthetic Breast Cancer ROI Images Using GAN} $|$ \emph{PyTorch}}{Summer  2023}
 \resumeItemListStart
-\resumeItem{Designed a sample banking transaction system using Java to simulate the common functions of using a bank account.}
-\resumeItem{Used JavaFX to create a GUI that supports actions such as creating an account, deposit, withdraw, list all acounts, etc.}
-\resumeItem{Implemented object-oriented programming practices such as inheritance to create different account types and databases.}
+\resumeItem{Developed a Generative Adversarial Network (GAN) for generating synthetic breast cancer ROI images to augment and enhance sparsely available datasets.}
 \resumeItemListEnd
+% \vspace{-13pt}
+% \resumeProjectHeading
+% {\textbf{Transaction Management GUI} $|$ \emph{Java, Eclipse, JavaFX}}{October 2020}
+% \resumeItemListStart
+% \resumeItem{Designed a sample banking transaction system using Java to simulate the common functions of using a bank account.}
+% \resumeItem{Used JavaFX to create a GUI that supports actions such as creating an account, deposit, withdraw, list all acounts, etc.}
+% \resumeItem{Implemented object-oriented programming practices such as inheritance to create different account types and databases.}
+% \resumeItemListEnd
 \resumeSubHeadingListEnd
-\vspace{-15pt}
-
-
-%
+% \vspace{25pt}
+\pagebreak
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-	\small{\item{
-		            \textbf{Languages}{: Python, Java, C, HTML/CSS, JavaScript, SQL} \\
-		            \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio} \\
-		            \textbf{Technologies/Frameworks}{: Linux, Jenkins, GitHub, JUnit, WordPress} \\
-		      }}
-\end{itemize}
-\vspace{-16pt}
+\begin{multicols}{2}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{\item{
+			            \textbf{Deep Learning}{: PyTorch, TensorFlow, Keras} \\
+			            \textbf{Web Development}{: SpringBoot, Angular} \\
+			            \textbf{Languages}{: Python, Java, JavaScript, SQL, \LaTeX} \\
+			            \textbf{Developer Tools}{: VS Code, Intellij Idea} \\
+			            \textbf{Technologies/Frameworks}{: Linux, GitHub} \\
+			      }}
+	\end{itemize}
+\end{multicols}
+% \vspace{-16pt}
 
+%-----------TESTS-----------
+\section{Standardized Tests}
+\hspace{7pt}
+\begin{tabularx}{\textwidth}{p{0.223\textwidth}p{0.28\textwidth}p{0.2\textwidth}p{0.3\textwidth}}
+	\textbf{GRE}             &                                    & \textbf{IELTS}             &                    \\
+	Analytical Writing :     & \textbf{5.0/6.0 - 91st Percentile} & \textbf{Overall - 7.5/9.0} &                    \\
+	Verbal Reasoning :       & \textbf{154/170 - 62nd Percentile} & Listening - 8.5/9.0        & Writing - 6.5/9.0  \\
+	Quantitative Reasoning : & \textbf{156/170 - 54th Percentile} & Reading - 7.5/9.0          & Speaking - 7.5/9.0 \\
+\end{tabularx}
 
-%-----------INVOLVEMENT---------------
-\section{Leadership / Extracurricular}
-\resumeSubHeadingListStart
-\resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
-\resumeItemListStart
-\resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
-\resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-\resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
-\resumeItemListEnd
+% %-----------INVOLVEMENT---------------
+% \section{Leadership / Extracurricular}
+% \resumeSubHeadingListStart
+% \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+% \resumeItemListStart
+% \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+% \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+% \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+% \resumeItemListEnd
 
-\resumeSubHeadingListEnd
+% \resumeSubHeadingListEnd
+
+%------REFERENCES-------
+\section{References}
+%\resumeSubHeadingListStart
+\hspace{7pt}
+\begin{tabularx}{\textwidth}{p{0.503\textwidth}p{0.5\textwidth}}
+	% \vspace*{2.0\multicolsep}
+	\textbf{Dr. M. Firoz Mridha}                                                           & \textbf{Shafqat Ahmed}                                                                                   \\
+	\textbf{Associate Professor of CS}                                                     & \textbf{Chief Technology Officer}                                                                        \\
+	American International University-Bangladesh                                           & Orion Informatics Ltd.                                                                                   \\
+	Email: \href{mailto:firoz.mridha@aiub.edu}{\bf firoz.mridha@aiub.edu}                  & Email: \href{mailto:shafqat.ahmed@orion-informatics.com}{\bf \mbox{shafqat.ahmed@orion-informatics.com}} \\
+	Website: \href{https://cs.aiub.edu/profile/firoz.mridha}{\bf AIUB}                     & Website: \href{https://www.linkedin.com/in/shafqatahmed/}{\bf LinkedIn}                                  \\
+	Research Profile: \href{https://www.researchgate.net/profile/M-Ph-D}{\bf ResearchGate} &                                                                                                          \\
+\end{tabularx}
+% \vspace*{2.0\multicolsep}
+%\resumeSubHeadingListEnd
 
 
 \end{document}
